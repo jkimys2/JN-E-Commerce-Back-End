@@ -25,7 +25,7 @@ router.get("/:id", async (req, res) => {
     });
 
     if (!tagData) {
-      res.status(404).json({ message: "No tag found with that ID!" });
+      res.status(404).json({ message: "No tag found with that ID exists!" });
     }
     res.status(200).json(tagData);
   } catch (err) {
@@ -36,6 +36,8 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   // create a new tag
   try {
+    const tagData = await Tag.create(req.body);
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
   }
