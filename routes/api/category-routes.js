@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findAll({
-      include: [{ model: Category }, { model: Product }],
+      include: [{ model: Product }],
     });
     res.status(200).json(categoryData);
   } catch (err) {
@@ -21,7 +21,7 @@ router.get("/:id", async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findByPk(req.params.id, {
-      include: [{ model: Category }, { model: Product }],
+      include: [{ model: Product }],
     });
 
     if (!categoryData) {
@@ -55,7 +55,9 @@ router.put("/:id", async (req, res) => {
       res.status(404).json({ message: "No category with this ID exists!" });
     }
 
-    res.status(200).json(categoryData);
+    res.status(200).json({
+      message: `Your category has been updated to ${req.body.category_name}!`,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -69,10 +71,12 @@ router.delete("/:id", async (req, res) => {
     });
 
     if (!categoryData) {
-      res.status(404).json({ message: "No category found with that ID exists!" });
+      res
+        .status(404)
+        .json({ message: "No category found with that ID exists!" });
     }
 
-    res.status(200).json(categoryData);
+    res.status(200).json({ message: `Your category has been deleted !` });
   } catch (err) {
     res.status(500).json(err);
   }
