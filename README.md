@@ -11,7 +11,7 @@
 
 ## Description
 
-Internet retail, also known as **e-commerce**, plays a significant role within the electronics industry, as it empowers businesses and consumers alike to conveniently engage in online buying and selling of electronic products. This project demonstrates the back end application for an e-commerce site. It incorporates a MySQL database along with model files built with Sequelize in order to create tables to hold data for an electronic based store. This application was completed by following the acceptance criterias listed below:
+Internet retail, also known as **e-commerce**, plays a significant role within the electronics industry, as it empowers businesses and consumers alike to conveniently engage in online buying and selling of electronic products. This project demonstrates the back end application for an e-commerce site. It incorporates a MySQL database along with model files built with Sequelize in order to create tables to hold data for an electronic-based store. This application was completed by following the acceptance criterias listed below:
 
 ```md
 GIVEN a functional Express.js API
@@ -27,7 +27,7 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
-Starter code was provided for this challenge, and the rest the application was completed with Express.js, Sequelize, and MySQL2. It was created in order to help businesses keep up with the demand of online shopping and helping them keep a better log on all of their products that they provide for their consumers. By running the code ```node server.js```, the user is connected to the server, and they are able to test all of the different routes in Insomnia!
+Starter code was provided for this challenge, and the rest of the application was completed with Express.js, Sequelize, and MySQL2. It was created in order to help businesses keep up with the demand of online shopping and helping them keep a better log of all of their products that they provide for their consumers. By running the code ```node server.js```, the user is then connected to the server, where they are able to test all of the different routes in Insomnia!
 
 
 ## Installation
@@ -48,9 +48,9 @@ Once the dependencies are installed, you will need to create the database by goi
 
 Then you will need to seed the database by running the code ```npm run seed``` into the integrated terminal.
 
-Once you seed the database, you will need to run the server by typing ```npm start``` into the terminal. You will get a message in the terminal stating that your app is listening at the port 3001. Now you are able to test all of the routes in Insomnia.
+Once you seed the database, you will need to run the server by typing ```npm start``` into the terminal. You will get a message in the terminal stating that your app is listening at the 3001 port. Now you are able to test all of the routes in Insomnia.
 
-In Insomnia, you can test each of the ```CATEGORY```, ```PRODUCT```, and ```TAG``` routes by passing in the different endpoints. The routes should return data provided that the endpoints were passed correctly!
+In Insomnia, you can test each of the ```CATEGORY```, ```PRODUCT```, and ```TAG``` routes by passing in the different endpoints. The routes should return the corresponding data, provided that the endpoints were passed correctly!
 
 
 ## Credits
