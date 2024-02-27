@@ -29,6 +29,8 @@ THEN I am able to successfully create, update, and delete data in my database
 
 Starter code was provided for this challenge, and the rest of the application was completed with Express.js, Sequelize, and MySQL2. It was created in order to help businesses keep up with the demand of online shopping and helping them keep a better log of all of their products that they provide for their consumers. By running the code ```node server.js```, the user is then connected to the server, where they are able to test all of the different routes in Insomnia!
 
+The link to the walkthrough video that demonstrates how this application works is provided [below](#links)! 
+
 
 ## Installation
 
@@ -61,4 +63,4 @@ Thank you Chris B. for all your help! 😊👍
 ## Links
 
 [GitHub Repository](https://github.com/jkimys2/JN-E-Commerce-Back-End) <br>
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1fICCSylmvaiSb0GydV1lC6tJnckhYehn/view)
