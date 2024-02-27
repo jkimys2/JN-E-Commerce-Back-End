@@ -26,3 +26,6 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
+
+Starter code was provided for this challenge, and the rest the application was completed with Express, Sequelize, and MySQL2. It was created in order to help businesses keep up with the demand of online shopping and helping them keep a better log on all of their products that they provide for their consumers. By running the code ```node server.js```, the user is connected to the server, where they are able to get all of the routes to all of the different routes, simply by testing it in Insomnia!  
+
